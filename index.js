@@ -142,7 +142,7 @@ function formatUptime(ms) {
 
 
 // --- Conversation memory ---
-const MAX_HISTORY =3;
+const MAX_HISTORY =15;
 const userHistory = new Map();
 function getHistory(id)  { if (!userHistory.has(id)) userHistory.set(id, []); return userHistory.get(id); }
 function pushHistory(id, role, content) {
